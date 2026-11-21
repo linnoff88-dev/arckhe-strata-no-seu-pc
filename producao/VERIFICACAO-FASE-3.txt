@@ -1,0 +1,70 @@
+bash -n ferramentas/qual_tamanho.sh: saída vazia, código 0.
+
+QT_FAKE_RAM_GB=32 QT_FAKE_VRAM_GB=12 QT_FAKE_ARCH=x86_64 QT_FAKE_DISCO_GB=50 bash ferramentas/qual_tamanho.sh
+Sistema: Linux | Arquitetura: x86_64
+RAM: 32 GB | VRAM detectada: 12 GB
+VRAM informada por QT_FAKE_VRAM_GB
+Soma apenas como referência: 44.000 GB | Disco livre na pasta atual: 50 GB
+Leituras em base binária, exibidas como GB para comparação aproximada com a doc.
+VRAM AMD/Intel não é detectada. Em outra memória compartilhada, não some duas vezes.
+Regra: especialistas na RAM + ~10 GB para sistema; GPU maior não reduz essa RAM fora do modo pouca RAM.
+Faixa da TABELA.md:
+PC gamer: pelo menos 32 GB de RAM + placa de 12 GB (linha 40–47 GB totais; 16 + 32 soma 48).
+Uso geral: Gyro-S, 27,6 GB RAM + VRAM; menor qualidade e mais lento. Para código: Coder, mais lento com leitura do SSD.
+Download de referência — Gyro-S: 58.5 GB.
+AVISO: não cabe no disco livre informado.
+Download de referência — Coder: 58.6 GB (estimativa: shard 1 de 29,6 GB + tabela de ~29 GB; fora auxiliares).
+AVISO: não cabe no disco livre informado.
+
+Estimativas: contexto e programas abertos também ocupam memória; não é garantia de que cabe.
+Gyro: compactação que usa menos memória e é mais lenta. NVFP4: formato de 4 bits da NVIDIA para placas novas.
+Somente leitura local. Consulte TABELA.md; nenhum comando Strata foi executado.
+
+QT_FAKE_RAM_GB=64 QT_FAKE_VRAM_GB=16 QT_FAKE_ARCH=x86_64 QT_FAKE_DISCO_GB=100 bash ferramentas/qual_tamanho.sh
+Sistema: Linux | Arquitetura: x86_64
+RAM: 64 GB | VRAM detectada: 16 GB
+VRAM informada por QT_FAKE_VRAM_GB
+Soma apenas como referência: 80.000 GB | Disco livre na pasta atual: 100 GB
+Leituras em base binária, exibidas como GB para comparação aproximada com a doc.
+VRAM AMD/Intel não é detectada. Em outra memória compartilhada, não some duas vezes.
+Regra: especialistas na RAM + ~10 GB para sistema; GPU maior não reduz essa RAM fora do modo pouca RAM.
+Faixa da TABELA.md:
+64 GB de RAM
+IQ3_S: 50 GB de especialistas + ~10 GB; melhor qualidade, o mais lento dos quatro originais.
+Download de referência — IQ3_S: 84 GB.
+Disco comporta essa referência; reserve espaço extra para auxiliares e preparação.
+
+Estimativas: contexto e programas abertos também ocupam memória; não é garantia de que cabe.
+Gyro: compactação que usa menos memória e é mais lenta. NVFP4: formato de 4 bits da NVIDIA para placas novas.
+Somente leitura local. Consulte TABELA.md; nenhum comando Strata foi executado.
+
+QT_FAKE_RAM_GB=128 QT_FAKE_VRAM_GB=0 QT_FAKE_ARCH=aarch64 QT_FAKE_DISCO_GB=150 bash ferramentas/qual_tamanho.sh
+Sistema: Linux | Arquitetura: aarch64
+RAM: 128 GB | VRAM detectada: 0 GB
+VRAM informada por QT_FAKE_VRAM_GB
+Soma apenas como referência: 128.000 GB | Disco livre na pasta atual: 150 GB
+Leituras em base binária, exibidas como GB para comparação aproximada com a doc.
+Memória unificada (ou ARM sem VRAM separada): RAM contada uma vez.
+VRAM AMD/Intel não é detectada. Em outra memória compartilhada, não some duas vezes.
+Regra: especialistas na RAM + ~10 GB para sistema; GPU maior não reduz essa RAM fora do modo pouca RAM.
+Faixa da TABELA.md:
+128 GB unificados: se for DGX Spark, IQ3_S ou NVFP4; só terminal.
+Outro ARM não tem compatibilidade confirmada. Q2_0 e Gyro não rodam no Spark.
+Download de referência — IQ3_S: 84 GB.
+Disco comporta essa referência; reserve espaço extra para auxiliares e preparação.
+Download de referência — NVFP4: 128 GB.
+Disco comporta essa referência; reserve espaço extra para auxiliares e preparação.
+ARM não identifica o equipamento: confira plataforma, pacote e plano; memória compartilhada conta uma vez.
+
+Estimativas: contexto e programas abertos também ocupam memória; não é garantia de que cabe.
+Gyro: compactação que usa menos memória e é mais lenta. NVFP4: formato de 4 bits da NVIDIA para placas novas.
+Somente leitura local. Consulte TABELA.md; nenhum comando Strata foi executado.
+
+grep -c {{ guia/index.html guia/en/index.html guia/es/index.html
+guia/index.html:0
+guia/en/index.html:0
+guia/es/index.html:0
+
+grep -cE ção|não| você guia/en/index.html guia/es/index.html
+guia/en/index.html:0
+guia/es/index.html:0

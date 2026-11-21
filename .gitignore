@@ -1,0 +1,4 @@
+codex-*.log
+logs-banner*.txt
+logs/
+__pycache__/

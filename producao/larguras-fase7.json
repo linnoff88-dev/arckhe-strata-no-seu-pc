@@ -1,0 +1,20 @@
+[
+  {
+    "lang": "PT",
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390
+  },
+  {
+    "lang": "en/",
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390
+  },
+  {
+    "lang": "es/",
+    "innerWidth": 390,
+    "scrollWidth": 390,
+    "bodyScrollWidth": 390
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "54": "Use la dirección indicada por launch y la credencial configurada para los endpoints protegidos. Confirme el modelo cargado y envíe una pregunta, o use la verificación de la herramienta en el paso 4. El código de salida 0 por sí solo no demuestra que el servidor haya iniciado.",
+  "56": "Obtenga la clave local con <code>strata launch --show-key</code> o en la pantalla Connect de launch (pulse <code>k</code> para mostrarla), según TERMINAL_LAUNCH.md. Sustituya <code>CHAVE_DO_STRATA</code> por el valor mostrado. Antes de usar Codex, defina la variable en esta misma ventana:"
+}

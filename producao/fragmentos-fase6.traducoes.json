@@ -1,0 +1,46 @@
+{
+  "en": {
+    "lead": "You’re running into usage limits and want to keep your files on your PC. Strata runs AI locally and connects your tools. Minimum: 32 GB of RAM with a compatible 12 GB graphics card, with limitations; 48–64 GB of RAM for the main packages and an SSD with free space.",
+    "intro": "Choose based on the detected RAM. The sum of RAM + VRAM is only a reference; unified memory is counted once. The ranges are contiguous: 30–45.9 means 30 ≤ RAM < 46, including readings such as 45.99. These are conservative kit groupings, not new official requirements.",
+    "headers": [
+      "Memory",
+      "Detected RAM",
+      "Options (text identical to the Portuguese script)"
+    ],
+    "platforms": [
+      "RAM + discrete graphics card",
+      "Unified: Mac / DGX Spark"
+    ],
+    "notes": "Estimated headroom: detected RAM − experts − 10 GB. Experts: Q2_0 34; IQ2_XS 35,5; IQ3_XXS 43; IQ3_S 50; Coder 23; Unsloth UD-IQ4_XS 72, UD-Q4_K_XL 88, UD-Q5_K_XL 108 and UD-Q6_K_XL 118 GB. Headroom below 3 GB: “fits tightly”; a negative value won’t fit in normal mode. In the 30–45.9 range, a compatible GPU with at least 12 GB is required; Coder uses little RAM and SSD space, with a speed loss. For Gyro-S, the documentation only gives combined memory: reference headroom = RAM + VRAM − 27,6 − 10 GB; this does not confirm how memory is divided between the two.",
+    "unified": "Unified memory: the same ranges, without adding VRAM. Mac requires Apple Silicon and macOS 15+; check the package in the plan. Spark options apply only to the documented DGX Spark with 128 GB nominal memory, even if the system reads 125 GB. Other ARM systems are unconfirmed. On Spark, NVFP4 uses a 68 GB expert file with mmap: RAM − 68 − 10 is only a reference, because context, cache and table also compete for memory. Q2_0 and Gyro do not run on Spark.",
+    "disk": "Disk: Q2_0, IQ2_XS and IQ3_XXS have a combined download range of 66–76 GB; the script compares against 76 GB. IQ3_S: 84 GB is a DGX Spark reference, not a universal figure for x86; confirm with --plan after installing. Gyro-S: 58,5 GB. Coder: ~58,6 GB, kit estimate (29,6 + ~29). Unsloth: 94/111/158/169 GB in the order listed; NVFP4: 128 GB. Reserve extra space for auxiliary files and preparation. IQ3_S requires few things to be open; Q8_0 is not included in the automatic list: ~136 GB for experts alone.",
+    "plan": "After installing Strata and opening a new terminal, check the plan before downloading the model. The command displays the plan without starting the model. Replace <tamanho> with the package, for example iq2_xs, iq3_xxs or iq3_s. For IQ3_S on x86, confirm your platform’s download size here.",
+    "node": "Install Node.js with npm from https://nodejs.org. Check both versions before installing the CLIs:",
+    "claude": "Copy ALL the variables printed by strata connect claude-code. It prints JSON, with the variables inside env; JSON is not a terminal command. For each \"NAME\": \"value\" pair, use export NAME=\"value\" in Bash or $env:NAME=\"value\" in PowerShell. Replace ... with the actual values, including models and limits. Include CLAUDE_CODE_SIMPLE=\"1\" only if it appears in the JSON (context ≤ 40.960 tokens, 40K). Run claude in that same terminal.",
+    "conditional": "Only if it appears in the JSON (context ≤ 40.960 tokens):",
+    "codex": "In Codex, also copy model_providers.strata.stream_idle_timeout_ms=600000, as the official generator sets it. The templates below use -c options for this run only; replace ... with the generated values. The key alone does not select the provider.",
+    "glossary": "A token is a piece of text; tokens/s means tokens per second. 32K and 128K indicate approximately 32 thousand and 128 thousand tokens. A port is the number that identifies a service in an address, such as 8080."
+  },
+  "es": {
+    "lead": "Te encuentras con límites de uso y quieres mantener tus archivos en tu PC. Strata ejecuta IA localmente y conecta tus herramientas. Mínimo: 32 GB de RAM con una tarjeta gráfica compatible de 12 GB, con limitaciones; 48–64 GB de RAM para los paquetes principales y un SSD con espacio.",
+    "intro": "Elige según la RAM detectada. La suma de RAM + VRAM es solo una referencia; la memoria unificada se cuenta una sola vez. Los rangos son contiguos: 30–45,9 significa 30 ≤ RAM < 46, e incluye lecturas como 45,99. Son agrupaciones conservadoras del kit, no nuevos requisitos oficiales.",
+    "headers": [
+      "Memoria",
+      "RAM detectada",
+      "Opciones (texto idéntico al script en portugués)"
+    ],
+    "platforms": [
+      "RAM + tarjeta gráfica dedicada",
+      "Unificada: Mac / DGX Spark"
+    ],
+    "notes": "Margen estimado: RAM detectada − expertos − 10 GB. Expertos: Q2_0 34; IQ2_XS 35,5; IQ3_XXS 43; IQ3_S 50; Coder 23; Unsloth UD-IQ4_XS 72, UD-Q4_K_XL 88, UD-Q5_K_XL 108 y UD-Q6_K_XL 118 GB. Margen inferior a 3 GB: “cabe justo”; un valor negativo no cabe en el modo normal. En el rango 30–45,9 se necesita una GPU compatible de al menos 12 GB; Coder usa poca RAM y espacio en SSD, con pérdida de velocidad. Para Gyro-S, la documentación solo indica la memoria conjunta: margen de referencia = RAM + VRAM − 27,6 − 10 GB; esto no confirma cómo se divide entre las dos memorias.",
+    "unified": "Memoria unificada: los mismos rangos, sin sumar VRAM. Mac requiere Apple Silicon y macOS 15+; comprueba el paquete en el plan. Las opciones Spark solo se aplican al DGX Spark documentado de 128 GB nominales, aunque el sistema lea 125 GB. No se ha confirmado para otros sistemas ARM. En Spark, NVFP4 usa un archivo de expertos de 68 GB con mmap: RAM − 68 − 10 es solo una referencia, porque el contexto, la caché y la tabla también compiten por la memoria. Q2_0 y Gyro no funcionan en Spark.",
+    "disk": "Disco: Q2_0, IQ2_XS e IQ3_XXS tienen un rango de descarga conjunto de 66–76 GB; el script compara con 76 GB. IQ3_S: 84 GB es una referencia para DGX Spark, no una cifra universal para x86; confirma con --plan después de instalar. Gyro-S: 58,5 GB. Coder: ~58,6 GB, estimación del kit (29,6 + ~29). Unsloth: 94/111/158/169 GB en el orden de la lista; NVFP4: 128 GB. Reserva espacio adicional para archivos auxiliares y preparación. IQ3_S requiere tener pocas cosas abiertas; Q8_0 no está en la lista automática: ~136 GB solo para expertos.",
+    "plan": "Después de instalar Strata y abrir un terminal nuevo, comprueba el plan antes de descargar el modelo. El comando muestra el plan sin iniciar el modelo. Sustituye <tamanho> por el paquete, por ejemplo iq2_xs, iq3_xxs o iq3_s. Para IQ3_S en x86, confirma aquí la descarga para tu plataforma.",
+    "node": "Instala Node.js con npm desde https://nodejs.org. Comprueba ambas versiones antes de instalar las CLIs:",
+    "claude": "Copia TODAS las variables que imprima strata connect claude-code. Imprime JSON, con las variables dentro de env; JSON no es un comando de terminal. Para cada par \"NOMBRE\": \"valor\", usa export NOMBRE=\"valor\" en Bash o $env:NOMBRE=\"valor\" en PowerShell. Sustituye ... por los valores reales, incluidos los modelos y los límites. Incluye CLAUDE_CODE_SIMPLE=\"1\" solo si aparece en el JSON (contexto ≤ 40.960 tokens, 40K). Ejecuta claude en ese mismo terminal.",
+    "conditional": "Solo si aparece en el JSON (contexto ≤ 40.960 tokens):",
+    "codex": "En Codex, copia también model_providers.strata.stream_idle_timeout_ms=600000, tal como lo establece el generador oficial. Las plantillas siguientes usan opciones -c solo para esta ejecución; sustituye ... por los valores generados. La clave por sí sola no selecciona el proveedor.",
+    "glossary": "Un token es un fragmento de texto; tokens/s significa tokens por segundo. 32K y 128K indican aproximadamente 32 mil y 128 mil tokens. Un puerto es el número que identifica el servicio en una dirección, como 8080."
+  }
+}
