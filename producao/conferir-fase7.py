@@ -7,7 +7,7 @@ os.chdir(root)
 rows=list(csv.reader(open('ferramentas/faixas.tsv'),delimiter='\t'))
 pt=json.loads(Path('producao/fragmentos-fase7.pt.json').read_text())
 tr={'pt':pt,**json.loads(Path('producao/fragmentos-fase7.traducoes.json').read_text())}
-report=['# Conferência da fase 7\n\nSomente arquivos, script orientativo e navegador local. Nenhum comando Strata foi executado. As saídas abaixo usam RAM/VRAM informadas, arquitetura x86_64 e disco fixado em 70 GB para reprodução.\n']
+report=['# Conferência da fase 7\n\nSomente arquivos, script orientativo e navegador local. Nenhum comando Strata foi executado. As saídas abaixo usam RAM/VRAM informadas, arquitetura x86_64 e disco fixado em 70 GB para reproduçêo.\n']
 def run(r,v,lang='pt',u=0):
  return subprocess.check_output(['bash','ferramentas/qual_tamanho.sh'],env={**os.environ,'QT_FAKE_RAM_GB':str(r),'QT_FAKE_VRAM_GB':str(v),'QT_FAKE_DISCO_GB':'70','QT_FAKE_ARCH':'x86_64','QT_LANG':lang,'QT_UNIFICADA':str(u)},text=True)
 def pair(n):
@@ -25,7 +25,7 @@ for r,v,lang in [(31.3,12,'pt'),(62.5,16,'pt'),(62.5,16,'en'),(94,16,'es')]:
   assert 'strata launch --plan --family unsloth --model UD-IQ4_XS' in out
   assert 'strata launch --plan --family unsloth --model UD-Q4_K_XL' in out
   assert '= -4 GB.' in out
- if lang!='pt': assert not re.search(r'ção|não| você|Sem indicação',out)
+ if lang!='pt': assert not re.search(r'çêo|nêo| você|Sem indicaçêo',out)
  command=f'QT_FAKE_RAM_GB={r} QT_FAKE_VRAM_GB={v} QT_FAKE_DISCO_GB=70 QT_FAKE_ARCH=x86_64 QT_UNIFICADA=0 QT_LANG={lang} bash ferramentas/qual_tamanho.sh'
  report.append('## '+str((r,v,lang))+'\n\n```sh\n'+command+'\n```\n\n```text\n'+out+'```\n')
 # Check boundaries, platform qualifiers, localization and family/model for every option.
@@ -36,7 +36,7 @@ for lang in tr:
    row=matches[0];out=run(r,16,lang,u)
    for opt in row[4].split('; '):
     if opt!=pt['no_option']:assert 'strata launch --plan '+pair(opt) in out
-   if lang!='pt':assert not re.search(r'ção|não| você|Sem indicação',out)
+   if lang!='pt':assert not re.search(r'çêo|nêo| você|Sem indicaçêo',out)
 for lang,d in tr.items():
  path=Path('guia/index.html' if lang=='pt' else f'guia/{lang}/index.html');raw=path.read_text();s=BeautifulSoup(raw,'html.parser')
  md=Path('TABELA.md' if lang=='pt' else f'TABELA.{lang}.md').read_text()
@@ -61,7 +61,7 @@ for lang,d in tr.items():
  assert '{{' not in raw
  if lang!='pt':
   assert 'QT_LANG='+lang+' bash ferramentas/qual_tamanho.sh' in s.get_text()
-  assert not re.search(r'ção|não| você|Sem indicação|CHAVE_DO_STRATA|&lt;tamanho&gt;',raw)
-report.append('## Conferências estáticas e de comportamento\n\n72 combinações de limites/idiomas/plataformas: uma faixa em cada caso e --plan de cada opção. Tabelas HTML/Markdown conferidas contra faixas.tsv. Aviso negativo exclusivo. Opções do Codex, revelação de chave, comandos por família, termos e links presentes nos três idiomas.\n')
+  assert not re.search(r'çêo|nêo| você|Sem indicaçêo|CHAVE_DO_STRATA|&lt;tamanho&gt;',raw)
+report.append('## Conferências estáticas e de comportamento\n\n72 combinações de limites/idiomas/plataformas: uma faixa em cada caso e --plan de cada opçêo. Tabelas HTML/Markdown conferidas contra faixas.tsv. Aviso negativo exclusivo. Opções do Codex, revelaçêo de chave, comandos por família, termos e links presentes nos três idiomas.\n')
 Path('producao/CONFERENCIA-FASE7.md').write_text('\n'.join(report))
 print('Quatro saídas integrais gravadas; 72 combinações e três idiomas conferidos.')

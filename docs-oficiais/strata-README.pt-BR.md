@@ -9,7 +9,7 @@
 <p align="center">Converse, programe e trabalhe com imagens, localmente.</p>
 
 <p align="center">
-  <a href="#modelos">Modelos</a> · <a href="#instalação"><b>Instalação</b></a> ·
+  <a href="#modelos">Modelos</a> · <a href="#instalaçêo"><b>Instalaçêo</b></a> ·
   <a href="#hardware">Hardware</a> · <a href="#ferramentas">Ferramentas</a> ·
   <a href="#ajuda">Ajuda</a> · <a href="#apoie-o-strata">Apoiar</a>
 </p>
@@ -23,7 +23,7 @@
 
 <p align="center"><sub><a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a> · <a href="README.ja.md">日本語</a> · <a href="README.de.md">Deutsch</a> · <a href="README.fr.md">Français</a> · <a href="README.es.md">Español</a> · <b>Português</b> · <a href="README.pl.md">Polski</a></sub></p>
 
-**Gratuito, de código aberto e seu para executar.** Use o Strata no desktop ou com suas ferramentas de programação favoritas. Não precisa de conta.
+**Gratuito, de código aberto e seu para executar.** Use o Strata no desktop ou com suas ferramentas de programaçêo favoritas. Nêo precisa de conta.
 
 ## Modelos
 
@@ -46,7 +46,7 @@ Recomendamos **primeiro a ISTA-DASLab**, depois a **Unsloth** e outros provedore
 <details>
 <summary><img src="docs/media/models/qwen.svg" width="22" alt="" align="middle"> &nbsp;<b>Qwen3.6-35B-A3B</b></summary>
 
-**Unsloth:** UD-Q4_K_XL, UD-Q6_K_XL, Q8_0. Esses são os pacotes documentados atualmente para este modelo.
+**Unsloth:** UD-Q4_K_XL, UD-Q6_K_XL, Q8_0. Esses sêo os pacotes documentados atualmente para este modelo.
 
 [Guia do modelo e compatibilidade](docs/QWEN36.md).
 
@@ -55,7 +55,7 @@ Recomendamos **primeiro a ISTA-DASLab**, depois a **Unsloth** e outros provedore
 <details>
 <summary><img src="docs/media/models/deepseek.svg" width="22" alt="" align="middle"> &nbsp;<b>DeepSeekV4.1-Flash-1017</b></summary>
 
-No **aplicativo de desktop** e no **Terminal**. O que não cabe na memória é lido do seu SSD, por isso é preciso muito espaço livre em disco.
+No **aplicativo de desktop** e no **Terminal**. O que nêo cabe na memória é lido do seu SSD, por isso é preciso muito espaço livre em disco.
 
 | Conjunto (ISTA-DAS) | Download | Espaço livre necessário |
 | --- | ---: | ---: |
@@ -63,7 +63,7 @@ No **aplicativo de desktop** e no **Terminal**. O que não cabe na memória é l
 | 2.00 bpw | 257 GB | cerca de 265 GB |
 | 2.25 bpw | 274 GB | cerca de 280 GB |
 
-Roda em NVIDIA RTX 30, 40 e 50 (Windows e Linux), AMD Radeon AI PRO R9700 (Linux), AMD Ryzen AI Max — Strix Halo (Windows) e Macs com Apple Silicon e 64 GB ou mais ([Mac](docs/DEEPSEEK_MAC.md)). A instalação baixa os arquivos e o motor do DeepSeek e depois inicia o modelo.
+Roda em NVIDIA RTX 30, 40 e 50 (Windows e Linux), AMD Radeon AI PRO R9700 (Linux), AMD Ryzen AI Max — Strix Halo (Windows) e Macs com Apple Silicon e 64 GB ou mais ([Mac](docs/DEEPSEEK_MAC.md)). A instalaçêo baixa os arquivos e o motor do DeepSeek e depois inicia o modelo.
 
 ```sh
 strata launch --family deepseek41 --model ist-das-2.00bpw --plan
@@ -78,15 +78,15 @@ Medido com o conjunto de 2.00 bpw no Strata 0.2.5. “Saída” é a velocidade 
 | 1x Radeon AI PRO R9700, 251 GB de RAM | 21 a 25 tokens/s | 320 a 360 tokens/s (8K) |
 | 4x Radeon AI PRO R9700 | 74 a 77 tokens/s | 400 a 450 tokens/s (8K) |
 
-[Memória, disco e detalhes](docs/DEEPSEEK41.md) · [Notas da versão](https://github.com/Niko1221/Strata/releases)
+[Memória, disco e detalhes](docs/DEEPSEEK41.md) · [Notas da versêo](https://github.com/Niko1221/Strata/releases)
 
 </details>
 
 <a id="the-other-sizes"></a>
 
-Não sabe o que cabe? [Escolha um modelo para o seu computador](docs/MODELS.md#pick-by-memory).
+Nêo sabe o que cabe? [Escolha um modelo para o seu computador](docs/MODELS.md#pick-by-memory).
 
-## Instalação
+## Instalaçêo
 
 <a id="option-a-the-strata-app"></a>
 
@@ -110,7 +110,7 @@ Instale o aplicativo, escolha um modelo e comece a conversar. Há um instalador 
 Prefere o terminal? Instale o Strata e execute **`strata launch`**.
 
 <details open>
-<summary><b>Comandos de instalação</b></summary>
+<summary><b>Comandos de instalaçêo</b></summary>
 
 **Linux / Mac**
 
@@ -141,7 +141,7 @@ Siga as instruções para baixar e iniciar um modelo. [Guia do Terminal](docs/TE
 
 <a id="build-from-source"></a>
 
-[Compilar a partir do código-fonte](docs/SOURCE_INSTALL.md) · [Docker](docs/DOCKER.md) · [Guia de instalação completo](docs/INSTALL.md)
+[Compilar a partir do código-fonte](docs/SOURCE_INSTALL.md) · [Docker](docs/DOCKER.md) · [Guia de instalaçêo completo](docs/INSTALL.md)
 
 <a id="what-you-need"></a>
 
@@ -149,12 +149,12 @@ Siga as instruções para baixar e iniciar um modelo. [Guia do Terminal](docs/TE
 
 | Hardware compatível | Guia |
 | --- | --- |
-| **NVIDIA GeForce RTX 20 / 30 / 40 / 50** | [Instalação para NVIDIA](docs/INSTALL.md#what-you-need) |
-| **AMD Radeon RX 7700 / 7800 / 7900, RX 9060 / 9070, AI PRO R9700** | [Instalação para AMD](docs/AMD_HIP.md) |
-| **AMD Radeon RX 6800 / 6900 · experimental** | [Instalação para RX 6000](docs/AMD_HIP.md#rdna2-gfx1030) |
-| **Intel Arc · Linux** | [Instalação para Intel](docs/INTEL_ARC.md) |
-| **Apple Silicon · M1 ou mais novo** | [Instalação para Mac](docs/MAC.md) |
-| **AMD Ryzen AI Max · Strix Halo** | [Instalação para Strix Halo](docs/STRIX_HALO.md) |
+| **NVIDIA GeForce RTX 20 / 30 / 40 / 50** | [Instalaçêo para NVIDIA](docs/INSTALL.md#what-you-need) |
+| **AMD Radeon RX 7700 / 7800 / 7900, RX 9060 / 9070, AI PRO R9700** | [Instalaçêo para AMD](docs/AMD_HIP.md) |
+| **AMD Radeon RX 6800 / 6900 · experimental** | [Instalaçêo para RX 6000](docs/AMD_HIP.md#rdna2-gfx1030) |
+| **Intel Arc · Linux** | [Instalaçêo para Intel](docs/INTEL_ARC.md) |
+| **Apple Silicon · M1 ou mais novo** | [Instalaçêo para Mac](docs/MAC.md) |
+| **AMD Ryzen AI Max · Strix Halo** | [Instalaçêo para Strix Halo](docs/STRIX_HALO.md) |
 
 <a id="using-it"></a>
 
@@ -162,7 +162,7 @@ Siga as instruções para baixar e iniciar um modelo. [Guia do Terminal](docs/TE
 
 **Claude Code · Codex CLI · OpenCode · oh-my-pi · pi.dev · Hermes Agent · OpenClaw**, e outras, pelas APIs compatíveis com OpenAI e Anthropic.
 
-Execute **`strata connect`** para ver as instruções da sua ferramenta. [Guia de conexão](docs/TERMINAL_LAUNCH.md#connect-your-apps-strata-connect).
+Execute **`strata connect`** para ver as instruções da sua ferramenta. [Guia de conexêo](docs/TERMINAL_LAUNCH.md#connect-your-apps-strata-connect).
 
 <a id="guides"></a>
 <a id="how-fast-is-it"></a>
@@ -171,7 +171,7 @@ Execute **`strata connect`** para ver as instruções da sua ferramenta. [Guia d
 
 ## Ajuda
 
-[Todos os guias](docs) · [Solução de problemas](docs/TROUBLESHOOTING.md) · [Relatar um bug](https://github.com/Niko1221/Strata/issues/new/choose) ·
+[Todos os guias](docs) · [Soluçêo de problemas](docs/TROUBLESHOOTING.md) · [Relatar um bug](https://github.com/Niko1221/Strata/issues/new/choose) ·
 [Benchmarks](docs/COMMUNITY_BENCHMARKS.md) · [Como funciona](docs/HOW_IT_WORKS.md) · [Contribuir](CONTRIBUTING.md)
 
 ## Apoie o Strata
@@ -201,6 +201,6 @@ Obrigado a todas as pessoas que apoiam o Strata.
 
 <a id="option-c-let-your-ai-set-it-up"></a>
 
-<sub>Para ferramentas de IA e leitores automáticos: <a href="AGENTS.md">referência técnica</a> · <a href="docs/AI_SETUP.md">instruções de instalação</a>.</sub>
+<sub>Para ferramentas de IA e leitores automáticos: <a href="AGENTS.md">referência técnica</a> · <a href="docs/AI_SETUP.md">instruções de instalaçêo</a>.</sub>
 
 **Patrocínios, parcerias de hardware ou colaborações:** [niko.veit@outlook.com](mailto:niko.veit@outlook.com).

@@ -4,8 +4,8 @@ import csv,os,subprocess,json,re
 root=Path(__file__).resolve().parents[1]
 os.chdir(root)
 rows=list(csv.reader(open('ferramentas/faixas.tsv'),delimiter='\t'))
-expected=[('<30 GB','Sem indicação automática segura'),('30–45,9 GB','Gyro-S; Coder'),('30–45,9 GB','Gyro-S; Coder'),('46–61,9 GB','Q2_0; IQ2_XS'),('62–93,9 GB','IQ3_XXS; IQ3_S'),('94–125,9 GB','Q2_0; IQ2_XS; IQ3_XXS; IQ3_S; UD-IQ4_XS; UD-Q4_K_XL'),('≥126 GB','Q2_0; IQ2_XS; IQ3_XXS; IQ3_S; UD-IQ4_XS; UD-Q4_K_XL; UD-Q5_K_XL; UD-Q6_K_XL')]
-report=['# Conferência da fase 6\n\nSomente o script de orientação e os arquivos locais foram executados/verificados. Nenhum comando Strata foi executado. RAM/VRAM/disco/arquitetura substituídos para resultados reproduzíveis: VRAM 12 GB, disco livre 70 GB, x86_64.\n']
+expected=[('<30 GB','Sem indicaçêo automática segura'),('30–45,9 GB','Gyro-S; Coder'),('30–45,9 GB','Gyro-S; Coder'),('46–61,9 GB','Q2_0; IQ2_XS'),('62–93,9 GB','IQ3_XXS; IQ3_S'),('94–125,9 GB','Q2_0; IQ2_XS; IQ3_XXS; IQ3_S; UD-IQ4_XS; UD-Q4_K_XL'),('≥126 GB','Q2_0; IQ2_XS; IQ3_XXS; IQ3_S; UD-IQ4_XS; UD-Q4_K_XL; UD-Q5_K_XL; UD-Q6_K_XL')]
+report=['# Conferência da fase 6\n\nSomente o script de orientaçêo e os arquivos locais foram executados/verificados. Nenhum comando Strata foi executado. RAM/VRAM/disco/arquitetura substituídos para resultados reproduzíveis: VRAM 12 GB, disco livre 70 GB, x86_64.\n']
 def run(r,u=0):
  return subprocess.check_output(['bash','ferramentas/qual_tamanho.sh'],env={**os.environ,'QT_FAKE_RAM_GB':str(r),'QT_FAKE_VRAM_GB':'12','QT_FAKE_DISCO_GB':'70','QT_FAKE_ARCH':'x86_64','QT_UNIFICADA':str(u)},text=True)
 for r,(label,options) in zip([29,31.3,44.5,46,62.5,94,126],expected):

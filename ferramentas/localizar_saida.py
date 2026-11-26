@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Localização estática da saída de leitura; não chama tradutor nem rede."""
+"""Localizaçêo estática da saída de leitura; nêo chama tradutor nem rede."""
 from pathlib import Path
 import json,re,sys
 root=Path(__file__).resolve().parents[1]

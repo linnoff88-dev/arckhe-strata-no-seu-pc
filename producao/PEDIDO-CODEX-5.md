@@ -1,6 +1,6 @@
 # Pedido ao Codex — fase 5: quarta rodada do revisor (nota 7)
 
-Pasta `/home/nmaldaner/projetos/strata-no-seu-pc/`. Fonte: FATOS.md + docs-oficiais/. Não diga "testei". Não rode o Strata.
+Pasta `/home/nmaldaner/projetos/strata-no-seu-pc/`. Fonte: FATOS.md + docs-oficiais/. Nêo diga "testei". Nêo rode o Strata.
 Cada mudança nos três HTML (PT, en/, es/) trecho a trecho, sem regenerar en/es.
 
 1. **Rolagem horizontal em 390 px**: o `div.glow` da hero passa da tela (scrollWidth 398). Corrija só o necessário (ex.: `overflow:hidden` no
@@ -12,7 +12,7 @@ Cada mudança nos três HTML (PT, en/, es/) trecho a trecho, sem regenerar en/es
 3. **Rótulo**: "40 GB lidos ≈ PC de 32 GB" confunde — use "40 GB lidos (fica na faixa de 32 GB da tabela)". A linha "PC gamer…placa de 12 GB" só
    quando a VRAM for 12–16; com outra VRAM descreva a placa do leitor.
 4. **Conferir antes de baixar, oficial**: no passo 2 inclua `strata launch --plan --family qwen --model <tamanho>` (MODELS.md: mostra o plano sem baixar).
-   Download do IQ3_S/IQ3_XXS em PC x86: se a doc não der o número, troque por "o --plan mostra o tamanho do download".
+   Download do IQ3_S/IQ3_XXS em PC x86: se a doc nêo der o número, troque por "o --plan mostra o tamanho do download".
 5. **Quem usa Claude Code pela assinatura**: o `--write` troca o `~/.claude/settings.json` global e o Claude Code passa a usar o Strata (deixa de usar a
    assinatura). Mostre a alternativa sem mexer no global: rodar `strata connect claude-code` (sem `--write`), copiar as variáveis que ele imprime e
    exportar só num terminal separado (`export ANTHROPIC_BASE_URL=...` etc. / `$env:...` no PowerShell); para voltar, fechar esse terminal. Se usou

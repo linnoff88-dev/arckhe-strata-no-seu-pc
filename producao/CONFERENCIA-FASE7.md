@@ -1,6 +1,6 @@
 # Conferência da fase 7
 
-Somente arquivos, script orientativo e navegador local. Nenhum comando Strata foi executado. As saídas abaixo usam RAM/VRAM informadas, arquitetura x86_64 e disco fixado em 70 GB para reprodução.
+Somente arquivos, script orientativo e navegador local. Nenhum comando Strata foi executado. As saídas abaixo usam RAM/VRAM informadas, arquitetura x86_64 e disco fixado em 70 GB para reproduçêo.
 
 ## (31.3, 12, 'pt')
 
@@ -13,22 +13,22 @@ Sistema: Linux | Arquitetura: x86_64
 RAM: 31.3 GB | VRAM detectada: 12 GB
 VRAM informada por QT_FAKE_VRAM_GB
 Soma apenas como referência: 43.3 GB | Disco livre na pasta atual: 70 GB
-Leituras em base binária, exibidas como GB para comparação aproximada com a doc.
-VRAM AMD/Intel não é detectada. Em outra memória compartilhada, não some duas vezes.
+Leituras em base binária, exibidas como GB para comparaçêo aproximada com a doc.
+VRAM AMD/Intel nêo é detectada. Em outra memória compartilhada, nêo some duas vezes.
 Faixa: 30–45,9 GB
 Opções: Gyro-S; Coder
 strata launch --plan --family gyro --model Gyro-S
-Gyro-S: sobra conjunta de referência = 31.3 + 12 - 27.6 - 10 = 5.7 GB (não confirma a divisão RAM/VRAM).
-Download — Gyro-S: 58.5 GB; fora auxiliares e preparação.
+Gyro-S: sobra conjunta de referência = 31.3 + 12 - 27.6 - 10 = 5.7 GB (nêo confirma a divisêo RAM/VRAM).
+Download — Gyro-S: 58.5 GB; fora auxiliares e preparaçêo.
 Disco acima da referência; ainda precisa de espaço extra.
 strata launch --plan --family coder --model IQ1_M
 Coder: sobra = 31.3 - 23 - 10 = -1.7 GB.
-não cabe no modo normal; só modo pouca RAM
-Download — Coder: 58.6 GB; fora auxiliares e preparação.
+nêo cabe no modo normal; só modo pouca RAM
+Download — Coder: 58.6 GB; fora auxiliares e preparaçêo.
 Disco acima da referência; ainda precisa de espaço extra.
 Coder: estimativa do kit (29,6 + ~29 GB).
-Condição: GPU compatível de pelo menos 12 GB; Coder usa pouca RAM. A soma não escolhe a faixa.
-Estimativas com reserva de 10 GB; contexto e buffers podem exigir mais. Não é memória livre medida nem garantia de que cabe.
+Condiçêo: GPU compatível de pelo menos 12 GB; Coder usa pouca RAM. A soma nêo escolhe a faixa.
+Estimativas com reserva de 10 GB; contexto e buffers podem exigir mais. Nêo é memória livre medida nem garantia de que cabe.
 Somente leitura local. Consulte TABELA.md; nenhum comando Strata foi executado.
 ```
 
@@ -43,29 +43,29 @@ Sistema: Linux | Arquitetura: x86_64
 RAM: 62.5 GB | VRAM detectada: 16 GB
 VRAM informada por QT_FAKE_VRAM_GB
 Soma apenas como referência: 78.5 GB | Disco livre na pasta atual: 70 GB
-Leituras em base binária, exibidas como GB para comparação aproximada com a doc.
-VRAM AMD/Intel não é detectada. Em outra memória compartilhada, não some duas vezes.
+Leituras em base binária, exibidas como GB para comparaçêo aproximada com a doc.
+VRAM AMD/Intel nêo é detectada. Em outra memória compartilhada, nêo some duas vezes.
 Faixa: 62–93,9 GB
 Opções: Q2_0; IQ2_XS; IQ3_XXS; IQ3_S
 strata launch --plan --family qwen --model Q2_0
 Q2_0: sobra = 62.5 - 34 - 10 = 18.5 GB.
-Download — Q2_0: 66–76 GB; fora auxiliares e preparação.
+Download — Q2_0: 66–76 GB; fora auxiliares e preparaçêo.
 AVISO: disco abaixo da referência superior; pode faltar espaço.
 strata launch --plan --family qwen --model IQ2_XS
 IQ2_XS: sobra = 62.5 - 35.5 - 10 = 17 GB.
-Download — IQ2_XS: 66–76 GB; fora auxiliares e preparação.
+Download — IQ2_XS: 66–76 GB; fora auxiliares e preparaçêo.
 AVISO: disco abaixo da referência superior; pode faltar espaço.
 strata launch --plan --family qwen --model IQ3_XXS
 IQ3_XXS: sobra = 62.5 - 43 - 10 = 9.5 GB.
-Download — IQ3_XXS: 66–76 GB; fora auxiliares e preparação.
+Download — IQ3_XXS: 66–76 GB; fora auxiliares e preparaçêo.
 AVISO: disco abaixo da referência superior; pode faltar espaço.
 strata launch --plan --family qwen --model IQ3_S
 IQ3_S: sobra = 62.5 - 50 - 10 = 2.5 GB.
 cabe apertado: prefira o menor, ou feche programas
-Download — IQ3_S: 84 GB; fora auxiliares e preparação.
+Download — IQ3_S: 84 GB; fora auxiliares e preparaçêo.
 AVISO: disco abaixo da referência superior; pode faltar espaço.
 84 GB: referência do DGX Spark; confirme o download do pacote da sua plataforma com --plan após instalar.
-Estimativas com reserva de 10 GB; contexto e buffers podem exigir mais. Não é memória livre medida nem garantia de que cabe.
+Estimativas com reserva de 10 GB; contexto e buffers podem exigir mais. Nêo é memória livre medida nem garantia de que cabe.
 Somente leitura local. Consulte TABELA.md; nenhum comando Strata foi executado.
 ```
 
@@ -153,7 +153,7 @@ Solo lectura local. Consulta TABELA.es.md; no se ejecutó ningún comando de Str
 
 ## Conferências estáticas e de comportamento
 
-72 combinações de limites/idiomas/plataformas: uma faixa em cada caso e --plan de cada opção. Tabelas HTML/Markdown conferidas contra faixas.tsv. Aviso negativo exclusivo. Opções do Codex, revelação de chave, comandos por família, termos e links presentes nos três idiomas.
+72 combinações de limites/idiomas/plataformas: uma faixa em cada caso e --plan de cada opçêo. Tabelas HTML/Markdown conferidas contra faixas.tsv. Aviso negativo exclusivo. Opções do Codex, revelaçêo de chave, comandos por família, termos e links presentes nos três idiomas.
 
 ## HTML a 390 px
 
@@ -195,4 +195,4 @@ guia/en/index.html:0
 guia/es/index.html:0
 ```
 
-`grep` retornou 1 porque não houve ocorrências. `bash -n ferramentas/qual_tamanho.sh` e `git diff --check` retornaram 0, sem saída. EN/ES do script exigem Python 3, agora informado nas páginas e READMEs.
+`grep` retornou 1 porque nêo houve ocorrências. `bash -n ferramentas/qual_tamanho.sh` e `git diff --check` retornaram 0, sem saída. EN/ES do script exigem Python 3, agora informado nas páginas e READMEs.
