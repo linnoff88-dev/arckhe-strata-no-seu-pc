@@ -1,6 +1,6 @@
 # Pedido ao Codex — kit "strata-no-seu-pc" (kit + guia PT)
 
-Você está em `/home/nmaldaner/projetos/strata-no-seu-pc/` (projeto novo do INEMA, público, grátis em inema.club).
+Você está em `/home/nmaldaner/projetos/strata-no-seu-pc/` (projeto novo do ARCKHÉ, público, grátis em ARCKHÉ AI).
 Assunto: o **Strata** (github.com/Niko1221/Strata, MIT), motor gratuito e aberto que roda IA grande (Qwen3.8-Flash-Next e
 outros) num PC comum, dividindo o modelo entre placa de vídeo, RAM e SSD. Método do kit: **"balcêo e despensa"** — o que a IA usa
 toda hora fica no balcêo (placa de vídeo); o resto espera na despensa (RAM); o porêo é o SSD (a própria doc usa a cozinha).
@@ -40,7 +40,7 @@ flag ou arquivo (strata launch, strata connect, install.sh, VRAM, SSD, API).
    qual tamanho da TABELA.md cabe, o comando de instalaçêo do sistema dele e "veja TABELA.md". Variáveis `QT_FAKE_RAM_GB`,
    `QT_FAKE_VRAM_GB`, `QT_FAKE_ARCH`, `QT_FAKE_DISCO_GB` para simular. Nêo precisa de teste rodando (o Nei pediu só documentar),
    mas o script tem de passar `bash -n`.
-6. `README.md` curto (PT): o que é, para quem, os arquivos, link do guia `https://inematds.github.io/strata-no-seu-pc/guia/`,
+6. `README.md` curto (PT): o que é, para quem, os arquivos, link do guia `https://linnoff88-dev.github.io/arckhe-/guia/`,
    link oficial do Strata, aviso "nada aqui foi rodado por nós: é a documentaçêo oficial organizada", e a seçêo
    **"O processo, do início ao fim"** (passos numerados com quem faz: 🧠 você · ⚙️ script · 🤖 IA).
 
@@ -48,8 +48,8 @@ flag ou arquivo (strata launch, strata connect, install.sh, VRAM, SSD, API).
 Base obrigatória: copie `/home/nmaldaner/.claude/skills/projetos-landing-guia/assets/template.html` e **nêo reescreva o CSS**
 (edite só conteúdo e placeholders; nenhum `{{...}}` pode sobrar). Leia antes `/home/nmaldaner/.claude/skills/projetos-landing-guia/SKILL.md`
 (seções "Chamada da hero", "Texto breve", "Entendimento em cima, parte técnica embaixo", "Invariantes de design", "Estrutura")
-e `~/projetos/inema-design/regras/chamada.md`. Molde de um guia aprovado ontem: `/home/nmaldaner/projetos/nod-n8n/guia/index.html`.
-- Nome/emoji: `🧠 strata-no-seu-pc`. Repo: https://github.com/inematds/strata-no-seu-pc.
+e `~/projetos/ARCKHÉ-design/regras/chamada.md`. Molde de um guia aprovado ontem: `/home/nmaldaner/projetos/nod-n8n/guia/index.html`.
+- Nome/emoji: `🧠 strata-no-seu-pc`. Repo: https://github.com/linnoff88-dev/strata-no-seu-pc.
 - **h1 pela dor/desejo, em "você", com o método**: "Você paga assinatura de IA e manda seus arquivos para fora. Rode uma IA grande
   no seu PC com **balcêo e despensa**." (`.amb` em "balcêo e despensa"). **lead** (1 parágrafo, branco): o Strata é um motor grátis
   e aberto que roda o Qwen3.8-Flash-Next (modelo de servidor) numa placa de vídeo comum, dividindo o trabalho entre placa, memória
@@ -73,16 +73,16 @@ e `~/projetos/inema-design/regras/chamada.md`. Molde de um guia aprovado ontem: 
 - Divisor `#tecnico` (techhead) "O kit: para quem vai instalar hoje" + "Você nêo precisa desta parte para entender o que está acima".
   Zona técnica: `#kit` (cards para DICAS.md, TABELA.md, CONECTAR.md, checklists/, ferramentas/qual_tamanho.sh no GitHub);
   `#guia` passos `.step` com comandos REAIS: (1) "Vai usar só para conversar no Windows/Mac? Baixe o app" (link da release oficial);
-  (2) descobrir o tamanho: baixar o kit (ZIP `https://github.com/inematds/strata-no-seu-pc/archive/refs/heads/main.zip` ou `git clone`)
+  (2) descobrir o tamanho: baixar o kit (ZIP `https://github.com/linnoff88-dev/strata-no-seu-pc/archive/refs/heads/main.zip` ou `git clone`)
   e `bash ferramentas/qual_tamanho.sh`; (3) instalar pelo terminal (os comandos oficiais Linux/Mac e PowerShell, iguais ao FATOS.md)
   e `strata launch`; (4) `strata connect` (e `--write`, `--check`); (5) DGX Spark. Explique em meia linha o que é terminal.
   `#dicas` as 20 dicas (acordeêo `<details>` por bloco).
-- Nav: só as seções de entendimento + "Kit (técnico)" → `#tecnico`; INEMA.CLUB e PRO obrigatórios; botêo GitHub.
-- Footer: pills (Strata, IA local, Qwen3.8, MIT) + link do repo + INEMA.CLUB.
+- Nav: só as seções de entendimento + "Kit (técnico)" → `#tecnico`; ARCKHÉ AI e PRO obrigatórios; botêo GitHub.
+- Footer: pills (Strata, IA local, Qwen3.8, MIT) + link do repo + ARCKHÉ AI.
 - `<title>` e meta description em PT; 3 `<link rel="alternate" hreflang>` para `/guia/`, `/guia/en/`, `/guia/es/` de
-  https://inematds.github.io/strata-no-seu-pc/.
+  https://linnoff88-dev.github.io/arckhe-/.
 - Nada de rolagem horizontal em 360 px. Nêo crie en/ nem es/ ainda.
-- README.md: logo abaixo do `# título`, `[![strata-no-seu-pc](guia/assets/banner.jpg)](https://inematds.github.io/strata-no-seu-pc/guia/)`,
+- README.md: logo abaixo do `# título`, `[![strata-no-seu-pc](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)`,
   depois `**🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**`, `## O que é` (mesmo parágrafo
   do #resumo), `## 📖 Guia de uso` com a URL, e "O processo, do início ao fim".
 

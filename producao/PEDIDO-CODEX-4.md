@@ -18,7 +18,7 @@ Aplique cada mudança nos três HTML (PT, en/, es/) trecho a trecho (sem regener
 5. Hero/lead: diga já no lead o mínimo prático segundo a doc ("a partir de 32 GB de RAM com placa de 12 GB, mais lento; 48–64 GB de RAM para o modelo
    principal"). Troque "confortável" pela frase literal da doc. Passo 1 Linux: `chmod +x` no AppImage (INSTALL.md). Rotule "~58,6 GB do Coder" como
    estimativa do kit também na página.
-6. EN/ES: traduza DICAS.md e as 4 checklists (`DICAS.en.md`, `DICAS.es.md`, `checklists/*.en.md`, `*.es.md`, pelo `inema-traduz`), aponte os links das
+6. EN/ES: traduza DICAS.md e as 4 checklists (`DICAS.en.md`, `DICAS.es.md`, `checklists/*.en.md`, `*.es.md`, pelo `ARCKHÉ-traduz`), aponte os links das
    páginas EN/ES para eles e corrija "TABELA.md (in Portuguese)" → TABELA.en.md (e o ES). A saída do script continua em PT: diga isso numa linha nas páginas EN/ES.
 
 No fim: as 6 saídas do script, `grep -c "{{"` nos 3 HTML, `grep -cE "çêo|nêo| você"` em en/es.

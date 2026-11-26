@@ -1,6 +1,6 @@
 # 🧠 strata-no-seu-pc
 
-[![strata-no-seu-pc](guia/assets/banner-es.jpg)](https://inematds.github.io/strata-no-seu-pc/guia/es/)
+[![strata-no-seu-pc](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,9 +10,9 @@ Quieres usar IA sin pagar por cada pregunta y mantener tus archivos en tu comput
 
 ## 📖 Guía de uso
 
-https://inematds.github.io/strata-no-seu-pc/guia/es/
+https://linnoff88-dev.github.io/arckhe-/guia/es/
 
-Kit público y gratuito de INEMA.CLUB. Método: **mostrador y despensa**.
+Kit público y gratuito de ARCKHÉ AI. Método: **mostrador y despensa**.
 **No ejecutamos nada de esto: es la documentación oficial organizada.** Las cifras son del proyecto o de su comunidad.
 [Strata oficial](https://github.com/Niko1221/Strata) — motor de código abierto, licencia MIT; los modelos tienen sus propias licencias.
 

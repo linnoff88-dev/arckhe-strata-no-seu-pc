@@ -1,6 +1,6 @@
 # 🧠 strata-no-seu-pc
 
-[![strata-no-seu-pc](guia/assets/banner-en.jpg)](https://inematds.github.io/strata-no-seu-pc/guia/en/)
+[![strata-no-seu-pc](guia/assets/banner-en.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/en/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -10,9 +10,9 @@ You want to use AI without paying for every question and keep your files on your
 
 ## 📖 User guide
 
-https://inematds.github.io/strata-no-seu-pc/guia/en/
+https://linnoff88-dev.github.io/arckhe-/guia/en/
 
-Free public kit from INEMA.CLUB. Method: **counter and pantry**.
+Free public kit from ARCKHÉ AI. Method: **counter and pantry**.
 **We did not run anything here: this is the organized official documentation.** Figures come from the project or its community.
 [Official Strata](https://github.com/Niko1221/Strata) — open-source engine, MIT license; models have their own licenses.
 

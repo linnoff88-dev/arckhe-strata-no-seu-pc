@@ -32,9 +32,9 @@ mudanças nos três HTML (PT, en/, es/) trecho a trecho, traduzindo só os trech
    Atualize CONECTAR.md igual.
 6. Passo 1: inclua Linux (AppImage) no título ou explique. Dica de acesso: "para começar, deixe em local" + 1 linha por opçêo (local, lan, tailscale,
    cloudflare). Termos: PowerShell (como abrir), release, prompt, DGX Spark (computador compacto da NVIDIA com 128 GB de memória unificada).
-7. Rodapés de fonte: link para FATOS.md e docs-oficiais/ no GitHub (https://github.com/inematds/strata-no-seu-pc/blob/main/...).
+7. Rodapés de fonte: link para FATOS.md e docs-oficiais/ no GitHub (https://github.com/linnoff88-dev/strata-no-seu-pc/blob/main/...).
 8. Repo: mova `PEDIDO-CODEX-*.md` e `FALHAS.md` para uma pasta `producao/` (fica como registro, fora da raiz). Nêo apague.
 9. Traduza TABELA.md e CONECTAR.md para `TABELA.en.md`, `TABELA.es.md`, `CONECTAR.en.md`, `CONECTAR.es.md` (pelo tradutor central
-   `inema-traduz` se preferir) e aponte os links das páginas EN/ES para eles.
+   `ARCKHÉ-traduz` se preferir) e aponte os links das páginas EN/ES para eles.
 
 No fim: diff resumido por item, `grep -c "{{"` nos 3 HTML (0), `grep -cE "çêo|nêo| você"` em en/es (0), e as 3 saídas do script.
